@@ -1,0 +1,98 @@
+.panCakesBanner{
+    display: flex;
+    width: 100%;
+    height: 200px; 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.panCakesBanner img{
+    width: 100%;
+    height: 100%;
+}
+.all{
+    display: flex;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.namePanCakes p{
+    font-size: 70px;
+    font-family: 'Dealer';
+    color: rgb(181, 130, 228);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.textPanCakes{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.textPanCakes p{
+    font-size: 40px;
+    font-family: 'Calibri';
+    color: rgb(181, 130, 228);
+}
+.pic1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.blockPan{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.variant1{
+    width: 25%;
+    height: 100%;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.variant1 img{
+    width: 100%;
+    height: 100%;
+}
+.panPan{
+    width: 100%;
+    height: 70%;
+}
+.variant1 p{
+    font-size: 20px;
+    font-family: 'Calibri';
+    color: rgb(181, 130, 228);
+    margin-top: 20px;
+}
+.btn{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    cursor: pointer;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border: dotted black 2px;
+    border-radius: 20px;
+}
+.btn p{
+    font-size: 15px;
+    font-family: 'Calibri';
+    color: rgb(0, 0, 0);
+}

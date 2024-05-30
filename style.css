@@ -1,0 +1,571 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    object-fit: cover;
+}
+.mainContainer{
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+/*шапка сайта*/
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(181, 130, 228);
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15%;
+    width: 40%;
+    height: 100%;   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.logoImg{
+    width: 40px;
+    height: 40px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.text p{
+    font-size: 20px;
+    color: white;
+    font-family: 'Nunito';
+    cursor: pointer;
+}
+.text h6 p{
+    font-size: 20px;
+    color: white;
+    font-family: 'Sri';
+    cursor: pointer;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 150%;
+}
+.text a{
+    color: white;
+}
+.links{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.links p{
+    margin-left: 20px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Nunito';
+    cursor: pointer;
+}
+.btnCake{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnOffer{
+    width: 35%;
+    height: 50%;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.btnOffer p{
+    font-size: 15px;
+    color:  rgb(181, 130, 228);
+    transition: color 0.3s ease;
+    font-family: 'Nunito';
+}
+.btnOffer:hover{
+    background-color: rgb(134, 0, 136);
+}
+.btnOffer p:hover{
+    color: white;
+}
+/*для слайда изображений*/
+.slider{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 900px;
+    flex-direction: column;
+} 
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 3s;
+}  
+.slide:first-child{
+    opacity: 1;
+}
+/*на слайдере*/
+.textBlock{
+    position: absolute;
+    z-index: 1; /* добавлено */
+    top: 50%; /* центрируем текст по вертикали */
+    left: 50%; /* центрируем текст по горизонтали */
+    transform: translate(-50%, -50%); /* центрируем текст */
+}
+.logoLogo{
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+}
+.logoLogo img{
+    width: 100%;
+    height: 100%;
+}
+.textBlock p{
+    font-size: 50px;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+/*белый фон с текстом*/
+.info{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 900px;
+    flex-direction: column;
+}
+.text1, .text2, .pic1, .pic2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.text1{
+    width: 100%;
+    height: 20%;
+}
+.text1 p{
+    font-size: 40px;
+    color: rgb(181, 130, 228);
+}
+.pic1{
+    width: 10%;
+    height: 5%;
+}
+.pic1 img,.pic2 img{
+    width: 100%;
+    height: 100%;
+}
+.text2{
+    width: 40%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.text2 p{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 25px;
+}
+.pic2{
+    width: 40%;
+    height: 7%;
+}
+/*меню с выбором продукции*/
+.menu{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.menuName{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.menuName p{
+    font-size: 70px;
+    color: rgb(181, 130, 228);
+    font-family: 'Dealer';
+}
+.menuChoise{
+    width: 90%;
+    height: 40%;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.panCakes img,.cakes img,.candies img,.drinks img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.panCakes,.cakes,.candies,.drinks{
+    width: calc(100% / 4);
+    height: 100%;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 1s;
+}
+.panCakes:hover,.cakes:hover,.candies:hover,.drinks:hover{
+    transform: scale(1.2);
+}
+.panCakes p,.cakes p,.candies p,.drinks p{
+    font-size: 40px;
+    font-family: 'Dealer';
+    color: rgb(181, 130, 228);
+}
+/*торты*/
+.purchase{
+    background-color: rgb(249, 230, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.namePurchase{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.namePurchase p{
+    font-size: 70px;
+    font-family: 'Dealer';
+    color: rgb(181, 130, 228);
+}
+.sloganPurchase{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sloganPurchase p, .nameCake p{
+    font-size: 40px;
+    font-family: 'Calibri';
+    color: rgb(181, 130, 228);
+}
+.pic11{
+    width: 25px;
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.textPurchase{
+    width: 40%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.textPurchase p{
+    font-size: 20px;
+    font-family: 'Calibri';
+    color: black;
+}
+.nameCake{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.blockCakes{
+    width: 85%;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.block{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    margin: 30px;
+}
+.one,.two,.three{
+    width: 500px;
+    height: 100%;
+    background-color: rgb(181, 130, 228);
+    margin-left: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.one img,.two img,.three img,.one1 img,.two1 img,.three1 img,.four1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.imgBlock{
+    width: 100%;
+    height: 65%;
+    margin-bottom: 10px;
+}
+.one1,.two1,.three1,.four1{
+    width: 300px;
+    height: 100%;
+    background-color: rgb(181, 130, 228);
+    margin-left: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.one p,.two p,.three p{
+    font-size: 25px;
+    font-family: 'Calibri';
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    line-height: 40px;
+}
+.one1 p,.two1 p,.three1 p,.four1 p{
+    font-size: 20px;
+    font-family: 'Calibri';
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    line-height: 25px;
+}
+.blockCakes1{
+    width: 85%;
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.block1{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    margin: 30px;
+}
+.button{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 2px white;
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+.button p{
+    font-size: 15px;
+    font-family: 'Calibri';
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+.button:hover{
+    background-color: white;
+}
+.button p:hover{
+    color: rgb(181, 130, 228);
+}
+.delete{
+    background-color: rgb(249, 230, 209);
+}
+/*блок с текстом по тому как оформить заказ*/
+.infoPurchase{
+    background-color: rgb(181, 130, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    flex-direction: column;
+    padding: 100px;
+}
+.block2{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 65%;
+    height: calc(100% / 4);
+    margin-bottom: 30px;
+}
+.imgImg{
+    width: 8%;
+    height: 60%;
+    margin-right: 10px;
+}
+.imgImg img{
+    width: 100%;
+    height: 100%;
+}
+.block2 p{
+    font-size: 20px;
+    font-family: 'Calibri';
+    color: rgb(255, 255, 255);
+}
+.block2 b{
+    font-size: 30px;
+    font-family: 'Calibri';
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+.textText{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+/*фото кондитерских*/
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    flex-direction: row;
+}
+.photoBlock1{
+    height: 100%;
+    width: 33.333333333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.photoBlock2{
+    height: 100%;
+    width: 66.66666666666%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photoBlock1 img,.photoBlock2 img{
+    height: 100%;
+    width: 100%;
+}
+/*карта*/
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1200px;
+    flex-direction: column;
+}
+.mapImg{
+    height: 630px;
+    width: 100%;
+}
+.mapImg img{
+    width: 100%;
+    height: 100%;
+}
+.nameCake h6 p{
+    font-size: 30px;
+    font-family: 'Nunito';
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+.nameCake h6 p:hover{
+    color: rgb(116, 23, 202);
+}
+/*подвал сайта*/
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(181, 130, 228);
+    display: flex;
+    padding: 30px;
+}
+.footer p{
+    color: white;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background: rgb(116, 23, 202);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.back-to-top:hover {
+    background: #333;
+    text-decoration: none;
+}
